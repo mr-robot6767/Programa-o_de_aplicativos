@@ -14,15 +14,15 @@ export class Epi {
     }
      adicionarQuantidade(valor) {
     if (valor > 0) {
-      this.#quantidade += valor;
+      this.#qntdEstoque += valor;
       return true;
     }
     return false;
   }
   
     retirarQuantidade(valor) {
-    if (valor > 0 && valor <= this.#quantidade) {
-      this.#quantidade -= valor;
+    if (valor > 0 && valor <= this.#qntdEstoque) {
+      this.#qntdEstoque -= valor;
       return true;
     }
     return false;
